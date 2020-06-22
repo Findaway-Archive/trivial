@@ -2,6 +2,7 @@ README.md
 setup.py
 src/trivial/__init__.py
 src/trivial/console.py
+src/trivial/wikipedia.py
 src/trivial.egg-info/PKG-INFO
 src/trivial.egg-info/SOURCES.txt
 src/trivial.egg-info/dependency_links.txt
