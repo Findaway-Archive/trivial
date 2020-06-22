@@ -1,0 +1,30 @@
+rule infer
+  command = /Users/jmchargue/Desktop/Findaway/trivial/.nox/pytype/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.7 -o $out --no-report-errors --nofail --quick $in
+  description = infer $module
+rule check
+  command = /Users/jmchargue/Desktop/Findaway/trivial/.nox/pytype/bin/python -m pytype.single --disable import-error --imports_info $imports --module-name $module -V 3.7 -o $out --analyze-annotated --nofail --quick $in
+  description = check $module
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/noxfile.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/noxfile.py
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/noxfile.imports
+  module = noxfile
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/__init__.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/src/trivial/__init__.py
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/trivial.__init__.imports
+  module = trivial.__init__
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/wikipedia.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/src/trivial/wikipedia.py
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/trivial.wikipedia.imports
+  module = trivial.wikipedia
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/console.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/src/trivial/console.py | /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/__init__.pyi /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/wikipedia.pyi
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/trivial.console.imports
+  module = trivial.console
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_console.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/tests/test_console.py | /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/console.pyi
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/tests.test_console.imports
+  module = tests.test_console
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/conftest.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/tests/conftest.py
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/tests.conftest.imports
+  module = tests.conftest
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_wikipedia.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/tests/test_wikipedia.py | /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/wikipedia.pyi
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/tests.test_wikipedia.imports
+  module = tests.test_wikipedia
+build /Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/__init__.pyi: check /Users/jmchargue/Desktop/Findaway/trivial/tests/__init__.py
+  imports = /Users/jmchargue/Desktop/Findaway/trivial/.pytype/imports/tests.__init__.imports
+  module = tests.__init__

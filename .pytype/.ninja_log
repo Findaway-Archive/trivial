@@ -1,0 +1,9 @@
+# ninja log v5
+0	912	1592861527024743868	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/__init__.pyi	df634e5cecb7b29e
+913	2649	1592861528700076030	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/noxfile.pyi	8b86827b26b93d06
+2649	5430	1592861531518914849	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/wikipedia.pyi	902fc85c7dd3b473
+5430	6976	1592861533068882661	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/console.pyi	7ab58e17193686e
+6976	9800	1592861535877672389	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_console.pyi	cd906f91276aada3
+9800	10711	1592861536826001479	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/conftest.pyi	88068fe7b7c798e8
+10711	11576	1592861537696794406	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/__init__.pyi	5f125559defb86f0
+11577	12487	1592861538595288524	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_wikipedia.pyi	9e73e220248b7ff1

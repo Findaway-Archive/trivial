@@ -1,16 +1,29 @@
-import requests
+from dataclasses import dataclass
+
 import click
+import desert
+import marshmallow
+import requests
 
 
-WIKI_URL = "https://{lang}.wikipedia.org/api/rest_v1/page/random/summary"
+@dataclass
+class Page:
+    title: str
+    extract: str
 
 
-def random_page(language):
+schema = desert.schema(Page, meta={"unknown": marshmallow.EXCLUDE})
+
+WIKI_URL: str = "https://{lang}.wikipedia.org/api/rest_v1/page/random/summary"
+
+
+def random_page(language: str = "en") -> Page:
     url = WIKI_URL.format(lang=language)
     try:
         with requests.get(url) as response:
             response.raise_for_status()
-            return response.json()
-    except requests.RequestException as error:
+            data = response.json()
+            return schema.load(data)
+    except (requests.RequestException, marshmallow.ValidationError) as error:
         message = str(error)
         raise click.ClickException(message)
