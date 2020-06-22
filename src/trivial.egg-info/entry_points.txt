@@ -1,3 +1,2 @@
 [console_scripts]
 trivial = trivial.console:main
-

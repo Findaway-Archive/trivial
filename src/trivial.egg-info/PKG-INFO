@@ -7,6 +7,6 @@ Author: James McHargue
 License: UNKNOWN
 Description: # trivial
         An experimental Python module used for testing development in an overhauled Python environment.
-        
+
 Platform: UNKNOWN
 Requires-Python: >=3.7,<4.0
