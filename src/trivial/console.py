@@ -1,5 +1,7 @@
-import click
+"""Script for managing the command line interface."""
 import textwrap
+
+import click
 
 from . import __version__, wikipedia
 
@@ -15,7 +17,13 @@ from . import __version__, wikipedia
 )
 @click.version_option(version=__version__)
 def main(language: str) -> None:
-    """Trivial, a project for pulling random Wikipedia articles."""
+    """Displays a random Wikipedia page in the command line.
+
+    Queries Wikipedia for a random article via wikipedia.py and displays it.
+
+    Args:
+        language: the language domain of Wikipedia to query.
+    """
     page = wikipedia.random_page(language=language)
 
     click.secho(page.title, fg="green")

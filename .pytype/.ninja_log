@@ -7,3 +7,11 @@
 9800	10711	1592861536826001479	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/conftest.pyi	88068fe7b7c798e8
 10711	11576	1592861537696794406	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/__init__.pyi	5f125559defb86f0
 11577	12487	1592861538595288524	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_wikipedia.pyi	9e73e220248b7ff1
+2	921	1592925353127153592	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/__init__.pyi	df634e5cecb7b29e
+921	3857	1592925356003261252	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/wikipedia.pyi	902fc85c7dd3b473
+3857	4729	1592925356934953289	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/__init__.pyi	5f125559defb86f0
+4729	6302	1592925358477928151	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/trivial/console.pyi	7ab58e17193686e
+6302	9311	1592925361464611098	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_console.pyi	cd906f91276aada3
+9311	10896	1592925363078826936	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/test_wikipedia.pyi	9e73e220248b7ff1
+10897	11884	1592925364078453537	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/tests/conftest.pyi	88068fe7b7c798e8
+11884	13806	1592925365897874329	/Users/jmchargue/Desktop/Findaway/trivial/.pytype/pyi/noxfile.pyi	8b86827b26b93d06
