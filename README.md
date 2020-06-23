@@ -3,4 +3,7 @@
 
 [![Codecov](https://codecov.io/gh/FindawayWorld/trivial/branch/master/graph/badge.svg)](https://codecov.io/gh/FindawayWorld)
 
-An experimental Python module used for testing development in an overhauled Python environment.
+A simple package that retrieves and displays summaries of random Wikipedia articles.
+(This package was made to learn about and demonstrate the concepts covered in Claudio Jolowicz's [Hypermodern Python article](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/).)
+
+[ReadTheDocs](https://trivial.readthedocs.io/en/latest/)
